@@ -33,7 +33,7 @@
         albumTableView.delegate = self;
         albumTableView.rowHeight = 200;
         albumTableView.backgroundColor = [UIColor clearColor];
-        albumTableView.frame = CGRectMake(550 ,SCREEN_HEIGHT/2-100, SCREEN_WIDTH,200);
+        albumTableView.frame = CGRectMake(550 ,SCREEN_WIDTH/2-100, SCREEN_HEIGHT,200);
         
         albumTableView.SeparatorColor = [UIColor clearColor];
         albumTableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
@@ -41,7 +41,7 @@
         
         [UIView animateWithDuration:1.0 delay:0.0 options:
          UIViewAnimationOptionCurveEaseInOut animations:^{
-             albumTableView.frame = CGRectMake(0 ,SCREEN_HEIGHT/2-100, SCREEN_WIDTH,200);
+             albumTableView.frame = CGRectMake(0 ,SCREEN_WIDTH/2-100, SCREEN_HEIGHT,200);
          } completion:^(BOOL finished) {
               }];
         
@@ -70,8 +70,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-
 }
 
 - (void)didReceiveMemoryWarning

@@ -61,7 +61,7 @@
    
     [self.view addSubview:newForm];
     
-    UILabel * title = [[UILabel alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-150), 60, 300, 100)];
+    UILabel * title = [[UILabel alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-150), 60, 300, 100)];
     title.text = @"My Music Pulse";
     title.textAlignment = 1;
     title.font = [UIFont fontWithName:@"HelveticaNeue-ultralight" size:30.0];
@@ -75,7 +75,7 @@
     [newForm addSubview:title];
     
     
-    userNameLabel = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-100), 150, 200, 40)];
+    userNameLabel = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-100), 150, 200, 40)];
     userNameLabel.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.05];
     userNameLabel.layer.cornerRadius = 4;
     userNameLabel.delegate = self;
@@ -88,7 +88,7 @@
     
     [newForm addSubview:userNameLabel];
     
-    passwordLabel = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-100), 200, 200, 40)];
+    passwordLabel = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-100), 200, 200, 40)];
     passwordLabel.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.05];
     passwordLabel.layer.cornerRadius = 4;
     passwordLabel.delegate = self;
@@ -102,7 +102,7 @@
     
     [newForm addSubview:passwordLabel];
     
-    emailLabel = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-100), 250, 200, 40)];
+    emailLabel = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-100), 250, 200, 40)];
     emailLabel.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.05];
     emailLabel.layer.cornerRadius = 4;
     emailLabel.delegate = self;
@@ -117,7 +117,7 @@
     [newForm addSubview:emailLabel];
     
     
-    UIButton *submitButton = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-160), 300, 110, 45)];
+    UIButton *submitButton = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-55), 300, 110, 45)];
     [submitButton setTitle:@"SIGN IN" forState:UIControlStateNormal];
     [submitButton addTarget:self action:@selector(newUser) forControlEvents:UIControlEventTouchUpInside];
     submitButton.backgroundColor = [UIColor colorWithRed:0.227f green:0.337f blue:0.580f alpha:1.0f];
@@ -127,17 +127,6 @@
     UIButton * cancelButton = [[UIButton alloc]initWithFrame:CGRectMake(523,10,29,29)];
     [cancelButton addTarget:self action:@selector(cancelLogin) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:cancelButton];
-    
-    FBLoginView *loginView =
-    [[FBLoginView alloc] initWithReadPermissions:
-     @[@"public_profile", @"email", @"user_friends", @"user_likes"]];
-    
-    loginView.frame = CGRectMake((SCREEN_WIDTH/2-45), 300, 215, 50);
-    [newForm addSubview:loginView];
-    
-    loginView.delegate = self;
-    
-    [newForm addSubview:loginView];
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{

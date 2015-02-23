@@ -364,7 +364,7 @@
 				B0862F391943ED510032A459 /* Mockup2@2x.png */,
 				B0862F371943E3550032A459 /* Mockup.png */,
 			);
-			name = Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 		B08CADA8194484B90078C95E /* UI Elements */ = {
@@ -413,7 +413,7 @@
 				B08CADCF194484D80078C95E /* white_logo.png */,
 				B08CADD0194484D80078C95E /* wood_brothers.png */,
 			);
-			name = "UI Elements";
+			path = "UI Elements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

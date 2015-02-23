@@ -58,13 +58,13 @@
         plug.contentMode = UIViewContentModeScaleToFill;
         [signUpBackground addSubview:plug];
         
-        UILabel * title = [[UILabel alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-100), 0, 200, 100)];
+        UILabel * title = [[UILabel alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-100), 0, 200, 100)];
         title.text = @"Plug in...";
         title.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:50.0];
         title.textAlignment = 1;
         [newForm addSubview:title];
         
-        userNameLabel = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-160), 100, 330, 40)];
+        userNameLabel = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-160), 100, 330, 40)];
         userNameLabel.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.05];
         userNameLabel.layer.cornerRadius = 4;
         userNameLabel.delegate = self;
@@ -76,7 +76,7 @@
 
         [newForm addSubview:userNameLabel];
 
-        passwordLabel = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-160), 150, 330, 40)];
+        passwordLabel = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-160), 150, 330, 40)];
         passwordLabel.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.05];
         passwordLabel.layer.cornerRadius = 4;
         passwordLabel.delegate = self;
@@ -90,7 +90,7 @@
         [newForm addSubview:passwordLabel];
         
         //Parse Login Button
-        UIButton *submitButton = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-160), 200, 110, 45)];
+        UIButton *submitButton = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-160), 200, 110, 45)];
         [submitButton setTitle:@"LOG IN" forState:UIControlStateNormal];
         [submitButton addTarget:self action:@selector(logIn) forControlEvents:UIControlEventTouchUpInside];
         submitButton.backgroundColor = [UIColor colorWithRed:0.227f green:0.337f blue:0.580f alpha:1.0f];
@@ -98,7 +98,7 @@
         [newForm addSubview:submitButton];
         
         // Link to sign up page
-        UIButton *newUserButton = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-50), 260, 100, 20)];
+        UIButton *newUserButton = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-50), 260, 100, 20)];
         [newUserButton.titleLabel setFont:[UIFont fontWithName:@"Helvetica" size:12.0]];
         [newUserButton setTitle:@"New User?" forState:UIControlStateNormal];
         [newUserButton addTarget:self action:@selector(signUp) forControlEvents:UIControlEventTouchUpInside];
@@ -148,7 +148,7 @@
     [[FBLoginView alloc] initWithReadPermissions:
      @[@"public_profile", @"email", @"user_friends", @"user_likes"]];
     
-    loginView.frame = CGRectMake((SCREEN_WIDTH/2-45), 200, 215, 50);
+    loginView.frame = CGRectMake((SCREEN_HEIGHT/2-45), 200, 215, 50);
     
     loginView.delegate = self;
     

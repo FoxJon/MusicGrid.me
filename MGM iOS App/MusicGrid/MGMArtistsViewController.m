@@ -143,19 +143,19 @@
     
     [self.view addSubview:newForm];
     
-    UIImageView * textBox1 = [[UIImageView alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-200), 100, 400, 40)];
+    UIImageView * textBox1 = [[UIImageView alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-200), 100, 400, 40)];
     textBox1.image = [UIImage imageNamed:@"password_area"];
     [newForm addSubview:textBox1];
     
-    UIImageView * textBox2 = [[UIImageView alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-200), 150, 400, 40)];
+    UIImageView * textBox2 = [[UIImageView alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-200), 150, 400, 40)];
     textBox2.image = [UIImage imageNamed:@"password_area"];
     [newForm addSubview:textBox2];
     
-    UIImageView * textBox3 = [[UIImageView alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-200), 200, 400, 40)];
+    UIImageView * textBox3 = [[UIImageView alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-200), 200, 400, 40)];
     textBox3.image = [UIImage imageNamed:@"password_area"];
     [newForm addSubview:textBox3];
     
-    artist1 = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-190), 100, 400, 40)];
+    artist1 = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-190), 100, 400, 40)];
     artist1.backgroundColor = [UIColor clearColor];
     artist1.layer.cornerRadius = 4;
     artist1.delegate = self;
@@ -168,7 +168,7 @@
     
     [newForm addSubview:artist1];
     
-    artist2 = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-190), 150, 200, 40)];
+    artist2 = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-190), 150, 200, 40)];
     artist2.backgroundColor = [UIColor clearColor];
     artist2.layer.cornerRadius = 4;
     artist2.delegate = self;
@@ -181,7 +181,7 @@
     
     [newForm addSubview:artist2];
     
-    artist3 = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-190), 200, 200, 40)];
+    artist3 = [[UITextField alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-190), 200, 200, 40)];
     artist3.backgroundColor = [UIColor clearColor];
     artist3.layer.cornerRadius = 4;
     artist3.delegate = self;
@@ -195,7 +195,7 @@
     [newForm addSubview:artist3];
 
     
-    UIButton *submitButton = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/2-55), 250, 110, 45)];
+    UIButton *submitButton = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_HEIGHT/2-55), 250, 110, 45)];
     [submitButton setTitle:@"SUBMIT" forState:UIControlStateNormal];
     [submitButton addTarget:self action:@selector(openCollectionVC) forControlEvents:UIControlEventTouchUpInside];
     submitButton.backgroundColor = [UIColor colorWithRed:0.016f green:0.863f blue:0.529f alpha:1.0f];
